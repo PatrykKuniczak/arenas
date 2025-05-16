@@ -25,4 +25,5 @@ group :development do
   gem "brakeman", require: false
   gem "web-console"
   gem "rubocop-rails-omakase", require: false
+  gem "hotwire-spark", "~> 0.1.13"
 end
