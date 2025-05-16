@@ -15,6 +15,8 @@ gem "solid_cable"
 gem "bootsnap", require: false
 gem "kamal", require: false
 gem "thruster", require: false
+gem "devise", "~> 4.9"
+gem "tailwindcss-rails", "~> 4.2"
 
 group :development do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"

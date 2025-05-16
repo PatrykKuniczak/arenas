@@ -17,12 +17,19 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="min-h-screen">
+    <turbo-frame id="navbar">
+      <%= render 'layouts/navbar' %>
+    </turbo-frame>
+    <turbo-frame id="alerts">
+      <%= render 'layouts/alerts' %>
+    </turbo-frame>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
